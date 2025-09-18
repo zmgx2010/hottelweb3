@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hotell ZHD - Boka</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/ZHD.webp" alt="Hotell ZHD Logo" />
+        </div>
+        <nav class="topnav" id="navbar">
+            <a href="index.html">Välkommen</a>
+            <a href="book.html" class="active">Boka</a>
+            <a href="findus.html">Hitta</a>
+            <a href="contact.html">Kontakta</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-section">
+            <h1>Boka rum</h1>
+            <form>
+                <label for="firstname">Förnamn</label>
+                <input type="text" id="firstname" name="firstname" required />
+
+                <label for="lastname">Efternamn</label>
+                <input type="text" id="lastname" name="lastname" required />
+
+                <label for="roomtype">Rumstyp</label>
+                <select id="roomtype" name="roomtype">
+                    <option value="single">Enkelrum</option>
+                    <option value="double">Dubbelrum</option>
+                    <option value="suite">Svit</option>
+                </select>
+
+                <label for="comments">Övrigt</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <button type="submit">Boka</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hotell ily | ilyasgata 1 | 123 45 ramlistad | 012 - 14 556 56</p>
+    </footer>
+</body>
+
+</html>

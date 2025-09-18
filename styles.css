@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Roboto&display=swap");
+
+/* GLOBAL */
+body {
+    background-color: hsla(0, 0%, 95%, 1);
+    background-image: url("img/arches.png");
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: "Limelight", cursive;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    gap: 1em;
+}
+
+.header-logo img {
+    height: 80px;
+    width: auto;
+}
+
+.header-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: hsl(0, 0%, 26%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.5em;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5em;
+    font-size: 1.1rem;
+    padding: 0.6em 1em;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: hsl(0, 0%, 63%);
+    color: black;
+}
+
+nav a.active {
+    background-color: hsla(0, 0%, 77%);
+    color: black;
+}
+
+/* MAIN LAYOUT */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+article,
+.menu,
+.booking-section,
+.contact-section,
+.findus-section,
+footer {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 1em auto;
+    max-width: 900px;
+}
+
+/* FORMS */
+form,
+fieldset {
+    display: grid;
+    gap: 1em;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    padding: 0.6em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.7em;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 50%;
+    justify-self: center;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* MAP IMAGE */
+.map img,
+iframe {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* MENU STYLE */
+.menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.menu-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item-text {
+    flex-grow: 1;
+}
+
+.menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu-item-name {
+    margin-right: 1.5em;
+}
+
+.menu-item-description {
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (min-width: 750px) {
+    fieldset {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-item-image {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+/* IMAGE GALLERY SECTION */
+.gallery-article {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 1em auto;
+    max-width: 1000px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.gallery figcaption {
+    margin-top: 0.5em;
+    font-style: italic;
+    color: #444;
+}
+
+@media (min-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
